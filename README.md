@@ -6,7 +6,7 @@
 
 This repo is part of [fleekxyz/templates](https://github.com/fleekxyz/templates) a collection of Collection of Boileplates & examples configured to easily deploy to Fleek.xyz with the pre-configured scrips.
 
-This repo is uses the gatsby template [gatsby-theme-portfolio-minimal](https://github.com/konstantinmuenster/gatsby-theme-portfolio-minimal) which was created by Konstantin Münster – [konstantin.digital](https://konstantin.digital)
+This repo uses the gatsby template [gatsby-theme-portfolio-minimal](https://github.com/konstantinmuenster/gatsby-theme-portfolio-minimal) which was created by Konstantin Münster – [konstantin.digital](https://konstantin.digital)
 
 ## Getting started
 
