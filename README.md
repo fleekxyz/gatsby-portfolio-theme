@@ -1,67 +1,76 @@
-<p align="center">
-  <img src="https://raw.githubusercontent.com/fleekxyz/gatsby-portfolio-theme/main/.github/readme-cover-gatsby-portfolio.png?token=GHSAT0AAAAAABOKGXBQOJ3OU3GWKPOU75QCY632VLQ" height="450" title="Fleek.xyz" alt="fleek-xyz logo">
-</p>
+# Gatsby Portfolio + Fleek template
 
-# Fleek Gatsby Portfolio template
+![preview](./.github/preview.png)
 
-This repo is part of [fleekxyz/templates](https://github.com/fleekxyz/templates) a collection of Collection of Boileplates & examples configured to easily deploy to Fleek.xyz with the pre-configured scrips.
+This template uses [gatsby-theme-portfolio-minimal](https://github.com/konstantinmuenster/gatsby-theme-portfolio-minimal) made by [konstantin.digital](https://konstantin.digital).
 
-This repo is uses the gatsby template [gatsby-theme-portfolio-minimal](https://github.com/konstantinmuenster/gatsby-theme-portfolio-minimal) which was created by Konstantin Münster – [konstantin.digital](https://konstantin.digital)
+## 🚀 Project Structure
 
-## Getting started
-
-Here is a summary of the available scripts and a description.
-
-### Install dependencies
 ```
-yarn
-```
-
-### Start development mode
-This will start a server on http://localhost:3000 where you can check the changes made to the content.
-```	
-yarn develop
+/
+├── content/
+│   └── articles/
+│   └── images/
+│   └── sections/
+│   └── settings.json
+├── src/
+│   └── pages/
+├── static/
+├── gatsby-config.js
+└── package.json
 ```
 
-### Build your site
-This will use `gatsby build` creating a directory called `public` which contains the site that will be uploaded
-```
-yarn build
-```
+## 🧞 Commands
 
-### Configure `fleek.json` using Fleek's CLI
-You can configure this site using Fleek's CLI, to get started run:
-```
-fleek sites init
-```
-It will prompt you for the following inputs:
-1. Site name: You can go ahead and create a new site
-2. Specify dist directory: Use `public` which contains the site exported by next
-3. Build command: You can specify the build command so fleek cli can build & deploy the site for you, you can use `yarn run build`
+All commands are run from the root of the project, from a terminal:
 
-After running this you'll be able to deploy the site using Fleek CLI
+| Command                | Action                                           |
+| :--------------------- | :----------------------------------------------- |
+| `yarn install`         | Installs the project dependencies      |
+| `yarn run develop`         | Starts local dev server at `localhost:3001`      |
+| `yarn run build`       | Build your production site to `./public/`           |
+| `yarn run serve`       | Preview your build locally, before deploying     |
+| `yarn run clean`        |  Deletes the `.cache` and `public` directories |
 
-### Deploy using Fleek CLI
-After configuring the `fleek.json` file using Fleek's CLI you can go ahead and deploy your site by running:
+## ⚡ How to deploy to Fleek
+
+### 1. Create a `fleek.json` config file:
+You can configure this site deployment using [Fleek CLI]() and running:
+```
+ > fleek sites init
+   WARN! Fleek CLI is in beta phase, use it under your own responsibility
+    ? Choose one of the existing sites or create a new one. › 
+    ❯ Create a new site
+```
+It will prompt you for a `name`, `dist` directory location & `build command`
+
+- `name`: How you want to name the site
+- `dist`: The output directory where the site is located, for this template it's `public`
+- `build command`: Command to build your site, this will be used to deploy the latest version either by CLI or Github Actions
+
+### 2. Deploy the site
+After configuiring your `fleek.json` file, you can deployt the site by running
+
 ```
 fleek sites deploy
 ```
 
-Then it will output a message that contains you IPFS CID
+After running it you will get an output like this:
+
 ```
-> Success! Deployed! IPFS CID: QmdswE9VopEmhttWd3VUeAxvaZKjAaCwn6w31srJQovDaz
+ WARN! Fleek CLI is in beta, use it at your own discretion
+   > Success! Deployed!
+   > Site IPFS CID: QmP1nDyoHqSrRabwUSrxRV3DJqiKH7b9t1tpLcr1NTkm1M
+
+   > You can visit through the gateway:
+   > https://ipfs.io/ipfs/QmP1nDyoHqSrRabwUSrxRV3DJqiKH7b9t1tpLcr1NTkm1M
 ```
 
-## Contributing
+### Extra features
+ - **Continuous Integration (CI):** `fleek sites ci` [Documentation.](https://docs.fleek.xyz/services/sites/#continuous-integration-ci)
+ - **Adding custom domains:** `fleek domains create` [Documentation.](https://docs.fleek.xyz/services/domains/)
 
-Contributions are always welcome!
 
-Please refer to each project's style and contribution guidelines for submitting patches and additions. In general, we follow the "fork-and-pull" Git workflow.
+## 👀 Want to learn more?
 
-1. Fork the repo on GitHub
-2. Clone the project to your own machine
-3. Commit changes to your own branch
-4. Push your work back up to your fork
-5. Submit a Pull request so that we can review your changes
-
-> NOTE: Be sure to merge the latest from "upstream" before making a pull request!
+Feel free to check [Gatsby documentation](://www.gatsbyjs.com/docs/).
