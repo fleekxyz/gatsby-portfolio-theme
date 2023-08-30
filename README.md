@@ -1,6 +1,6 @@
 # Gatsby Portfolio + Fleek template
 
-![preview](./.github/preview.png)
+![image](https://github.com/fleekxyz/gatsby-portfolio-theme/assets/73345016/90a39827-da74-467d-b058-4ed1afb2d65b)
 
 This template uses [gatsby-theme-portfolio-minimal](https://github.com/konstantinmuenster/gatsby-theme-portfolio-minimal) made by [konstantin.digital](https://konstantin.digital).
 
