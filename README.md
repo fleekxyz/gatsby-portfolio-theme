@@ -22,7 +22,7 @@ This template uses [gatsby-theme-portfolio-minimal](https://github.com/konstanti
 
 ## 🧞 Commands
 
-All commands are run from the root of the project from a terminal:
+All commands are run from the root of the project, from a terminal:
 
 | Command                | Action                                           |
 | :--------------------- | :----------------------------------------------- |
